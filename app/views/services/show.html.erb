@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+<%= image_tag @service.servicepicture.url%>
+<p>
+  <strong>Survicename:</strong>
+  <%= @service.survicename %>
+</p>
+
+<p>
+  <strong>Metakeywords:</strong>
+  <%= @service.metakeywords %>
+</p>
+
+<p>
+  <strong>Metadescription:</strong>
+  <%= @service.metadescription %>
+</p>
+
+<p>
+  <strong>Metaurl:</strong>
+  <%= @service.metaurl %>
+</p>
+
+<p>
+  <strong>Metaimage:</strong>
+  <%= @service.metaimage %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @service.content %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @service.active %>
+</p>
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>

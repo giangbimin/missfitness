@@ -1,0 +1,65 @@
+<%= form_for(trainer) do |f| %>
+  <% if trainer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trainer.errors.count, "error") %> prohibited this trainer from being saved:</h2>
+
+      <ul>
+      <% trainer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :trainerpicture %>
+  </div>
+  <div class="field">
+    <%= f.label :trainername %>
+    <%= f.text_field :trainername %>
+  </div>
+
+  <div class="field">
+    <%= f.label :metakeywords %>
+    <%= f.text_field :metakeywords %>
+  </div>
+
+  <div class="field">
+    <%= f.label :metadescription %>
+    <%= f.text_area :metadescription %>
+  </div>
+
+  <div class="field">
+    <%= f.label :metaimage %>
+    <%= f.text_field :metaimage %>
+  </div>
+
+  <div class="field">
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pilates %>
+    <%= f.check_box :pilates %>
+  </div>
+
+  <div class="field">
+    <%= f.label :privatetraining %>
+    <%= f.check_box :privatetraining %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ciruittraining %>
+    <%= f.check_box :ciruittraining %>
+  </div>
+
+  <div class="field">
+    <%= f.label :trx %>
+    <%= f.check_box :trx %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

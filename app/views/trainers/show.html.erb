@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+<%= image_tag @trainer.trainerpicture.url%>
+<p>
+  <strong>Trainername:</strong>
+  <%= @trainer.trainername %>
+</p>
+
+<p>
+  <strong>Metakeywords:</strong>
+  <%= @trainer.metakeywords %>
+</p>
+
+<p>
+  <strong>Metadescription:</strong>
+  <%= @trainer.metadescription %>
+</p>
+
+<p>
+  <strong>Metaurl:</strong>
+  <%= @trainer.metaurl %>
+</p>
+
+<p>
+  <strong>Metaimage:</strong>
+  <%= @trainer.metaimage %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @trainer.content %>
+</p>
+
+<p>
+  <strong>Pilates:</strong>
+  <%= @trainer.pilates %>
+</p>
+
+<p>
+  <strong>Privatetraining:</strong>
+  <%= @trainer.privatetraining %>
+</p>
+
+<p>
+  <strong>Ciruittraining:</strong>
+  <%= @trainer.ciruittraining %>
+</p>
+
+<p>
+  <strong>Trx:</strong>
+  <%= @trainer.trx %>
+</p>
+
+<%= link_to 'Edit', edit_trainer_path(@trainer) %> |
+<%= link_to 'Back', trainers_path %>

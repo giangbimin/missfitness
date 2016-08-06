@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+<%= image_tag @shop.itempicture.url%>
+<p>
+  <strong>Itemname:</strong>
+  <%= @shop.itemname %>
+</p>
+
+<p>
+  <strong>Metakeywords:</strong>
+  <%= @shop.metakeywords %>
+</p>
+
+<p>
+  <strong>Metadescription:</strong>
+  <%= @shop.metadescription %>
+</p>
+
+<p>
+  <strong>Metaurl:</strong>
+  <%= @shop.metaurl %>
+</p>
+
+<p>
+  <strong>Metaimage:</strong>
+  <%= @shop.metaimage %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @shop.content %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @shop.price %>
+</p>
+
+<p>
+  <strong>Available:</strong>
+  <%= @shop.available %>
+</p>
+
+<%= link_to 'Edit', edit_shop_path(@shop) %> |
+<%= link_to 'Back', shops_path %>

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trainername: MyString
+  metakeywords: MyString
+  metadescription: MyText
+  metaurl: MyString
+  metaimage: MyString
+  content: MyText
+  pilates: false
+  privatetraining: false
+  ciruittraining: false
+  trx: false
+
+two:
+  trainername: MyString
+  metakeywords: MyString
+  metadescription: MyText
+  metaurl: MyString
+  metaimage: MyString
+  content: MyText
+  pilates: false
+  privatetraining: false
+  ciruittraining: false
+  trx: false

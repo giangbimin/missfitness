@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Trainers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Trainername</th>
+      <th>Metakeywords</th>
+      <th>Metadescription</th>
+      <th>Metaurl</th>
+      <th>Metaimage</th>
+      <th>Content</th>
+      <th>Pilates</th>
+      <th>Privatetraining</th>
+      <th>Ciruittraining</th>
+      <th>Trx</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trainers.each do |trainer| %>
+      <tr>
+        <td><%= trainer.trainername %></td>
+        <td><%= trainer.metakeywords %></td>
+        <td><%= trainer.metadescription %></td>
+        <td><%= trainer.metaurl %></td>
+        <td><%= trainer.metaimage %></td>
+        <td><%= trainer.content %></td>
+        <td><%= trainer.pilates %></td>
+        <td><%= trainer.privatetraining %></td>
+        <td><%= trainer.ciruittraining %></td>
+        <td><%= trainer.trx %></td>
+        <td><%= link_to 'Show', trainer %></td>
+        <td><%= link_to 'Edit', edit_trainer_path(trainer) %></td>
+        <td><%= link_to 'Destroy', trainer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trainer', new_trainer_path %>

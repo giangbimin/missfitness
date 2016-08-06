@@ -1,0 +1,50 @@
+<%= form_for(service) do |f| %>
+  <% if service.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(service.errors.count, "error") %> prohibited this service from being saved:</h2>
+
+      <ul>
+      <% service.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :servicepicture %>
+  </div>
+  <div class="field">
+    <%= f.label :survicename %>
+    <%= f.text_field :survicename %>
+  </div>
+
+  <div class="field">
+    <%= f.label :metakeywords %>
+    <%= f.text_field :metakeywords %>
+  </div>
+
+  <div class="field">
+    <%= f.label :metadescription %>
+    <%= f.text_area :metadescription %>
+  </div>
+
+  <div class="field">
+    <%= f.label :metaimage %>
+    <%= f.text_field :metaimage %>
+  </div>
+
+  <div class="field">
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+
+  <div class="field">
+    <%= f.label :active %>
+    <%= f.check_box :active %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

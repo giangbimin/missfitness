@@ -1,0 +1,2 @@
+json.extract! trainer, :id, :trainername, :metakeywords, :metadescription, :metaurl, :metaimage, :content, :pilates, :privatetraining, :ciruittraining, :trx, :created_at, :updated_at
+json.url trainer_url(trainer, format: :json)
